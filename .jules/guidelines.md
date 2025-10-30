@@ -1,0 +1,6 @@
+- Add **concise technical instructions** on how to work with the `docs/tasks.md` checklist.  
+- Instructions should include:  
+  - Mark tasks as `[x]` when completed.  
+  - Keep phases intact but add new tasks if needed.  
+  - Ensure every new or modified task stays linked to a requirement and plan item.  
+  - Keep formatting consistent with the existing style.  
