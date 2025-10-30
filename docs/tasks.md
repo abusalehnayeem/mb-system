@@ -8,25 +8,25 @@
 
 2. Architecture & shared services
 
-   - [x] Add CommunityToolkit.Mvvm package and configure MVVM base classes (BaseViewModel, RelayCommand usage).
-   - [x] Configure dependency injection (Microsoft.Extensions.DependencyInjection) in app startup.
-   - [x] Create a navigation service abstraction and register it with DI.
-   - [x] Implement an API client/service layer interface (IApiClient) and a placeholder HTTP implementation.
-   - [x] Define core domain models and DTOs for List, Detail, and Data Entry flows.
-   - [x] Add logging and global error handling hooks (simple logger service and error display strategy).
+   - [ ] Add CommunityToolkit.Mvvm package and configure MVVM base classes (BaseViewModel, RelayCommand usage).
+   - [ ] Configure dependency injection (Microsoft.Extensions.DependencyInjection) in app startup.
+   - [ ] Create a navigation service abstraction and register it with DI.
+   - [ ] Implement an API client/service layer interface (IApiClient) and a placeholder HTTP implementation.
+   - [ ] Define core domain models and DTOs for List, Detail, and Data Entry flows.
+   - [ ] Add logging and global error handling hooks (simple logger service and error display strategy).
 
 3. Design system & theming
 
-   - [x] Create `Resources/Styles.xaml` and add color, typography, padding, and radius tokens from `docs/requirements.md`.
-   - [x] Add a light theme resource dictionary using Primary #2196F3, Background #FAFAFA, Text colors, and status colors.
-   - [x] Create reusable styles for headers, body text, labels, buttons, and inputs that match typography spec.
+   - [ ] Create `Resources/Styles.xaml` and add color, typography, padding, and radius tokens from `docs/requirements.md`.
+   - [ ] Add a light theme resource dictionary using Primary #2196F3, Background #FAFAFA, Text colors, and status colors.
+   - [ ] Create reusable styles for headers, body text, labels, buttons, and inputs that match typography spec.
    - [ ] Implement UI components: KPI card, status dot, list item template, sticky footer, FAB, primary button.
    - [ ] Add accessibility attributes to components (AutomationIds, semantic labels) and ensure 44pt touch target sizing.
 
 4. Shell navigation & bottom tabs
 
-   - [x] Implement `AppShell` with bottom tabs (max 5 tabs) and define routes for Dashboard, Lists, Settings, etc.
-   - [x] Wire up empty pages for each tab (DashboardPage, ListPage, DetailPage, DataEntryPage) and register routes.
+   - [ ] Implement `AppShell` with bottom tabs (max 5 tabs) and define routes for Dashboard, Lists, Settings, etc.
+   - [ ] Wire up empty pages for each tab (DashboardPage, ListPage, DetailPage, DataEntryPage) and register routes.
    - [ ] Ensure route-based navigation supports pushing/popping from List -> Detail -> Edit and deep linking.
 
 5. Dashboard screen
