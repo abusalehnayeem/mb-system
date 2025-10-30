@@ -8,12 +8,12 @@
 
 2. Architecture & shared services
 
-   - [ ] Add CommunityToolkit.Mvvm package and configure MVVM base classes (BaseViewModel, RelayCommand usage).
-   - [ ] Configure dependency injection (Microsoft.Extensions.DependencyInjection) in app startup.
-   - [ ] Create a navigation service abstraction and register it with DI.
-   - [ ] Implement an API client/service layer interface (IApiClient) and a placeholder HTTP implementation.
-   - [ ] Define core domain models and DTOs for List, Detail, and Data Entry flows.
-   - [ ] Add logging and global error handling hooks (simple logger service and error display strategy).
+   - [x] Add CommunityToolkit.Mvvm package and configure MVVM base classes (BaseViewModel, RelayCommand usage).
+   - [x] Configure dependency injection (Microsoft.Extensions.DependencyInjection) in app startup.
+   - [x] Create a navigation service abstraction and register it with DI.
+   - [x] Implement an API client/service layer interface (IApiClient) and a placeholder HTTP implementation.
+   - [x] Define core domain models and DTOs for List, Detail, and Data Entry flows.
+   - [x] Add logging and global error handling hooks (simple logger service and error display strategy).
 
 3. Design system & theming
 
