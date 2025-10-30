@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Primary Color Theme -->
+    <Color x:Key="Primary">#2196F3</Color> <!-- Blue -->
+    <Color x:Key="PrimaryDark">#1976D2</Color>
+    <Color x:Key="PrimaryLight">#BBDEFB</Color>
+    <Color x:Key="Accent">#FF9800</Color> <!-- Orange -->
+
+    <!-- Standard Colors -->
+    <Color x:Key="White">#FFFFFF</Color>
+    <Color x:Key="Black">#000000</Color>
+
+    <!-- Grayscale Palette -->
+    <Color x:Key="Gray100">#F5F5F5</Color>
+    <Color x:Key="Gray200">#EEEEEE</Color>
+    <Color x:Key="Gray300">#E0E0E0</Color>
+    <Color x:Key="Gray400">#BDBDBD</Color>
+    <Color x:Key="Gray500">#9E9E9E</Color>
+    <Color x:Key="Gray600">#757575</Color>
+    <Color x:Key="Gray900">#212121</Color>
+
+    <!-- Backgrounds -->
+    <Color x:Key="BackgroundLight">#FAFAFA</Color>
+
+    <!-- Text Colors -->
+    <Color x:Key="TextPrimary">#212121</Color> <!-- Gray900 -->
+    <Color x:Key="TextSecondary">#757575</Color> <!-- Gray600 -->
+    <Color x:Key="TextOnPrimary">#FFFFFF</Color> <!-- White -->
+
+    <!-- State Colors -->
+    <Color x:Key="Success">#4CAF50</Color> <!-- Green -->
+    <Color x:Key="Warning">#FFC107</Color> <!-- Amber -->
+    <Color x:Key="Error">#F44336</Color> <!-- Red -->
+
+</ResourceDictionary>

@@ -13,9 +13,9 @@
 8. [x] Create ResourceDictionaries for colors, typography, and spacing.
 
 ## Phase 3: Core Infrastructure
-9. [ ] Scaffold MAUI project with Shell navigation.
-10. [ ] Implement global styles and theming resources.
-11. [ ] Integrate CommunityToolkit.Mvvm, CommunityToolkit.Maui, and testing libraries.
+9. [x] Scaffold MAUI project with Shell navigation.
+10. [x] Implement global styles and theming resources.
+11. [x] Integrate CommunityToolkit.Mvvm, CommunityToolkit.Maui, and testing libraries.
 12. [ ] Develop base ViewModel and BasePage classes.
 13. [ ] Build standardized controls: Card, KPI Card, StatusDot, FAB.
 
