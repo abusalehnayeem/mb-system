@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiERP.TasksPage"
+             Title="Task Details"
+             BackgroundColor="{StaticResource Background}">
+    <Grid RowDefinitions="*, Auto">
+
+        <!-- Main Content -->
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Spacing="20" Padding="16">
+
+                <!-- Header -->
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="Task Details" Style="{StaticResource HeaderLabel}" />
+                    <Frame BackgroundColor="{StaticResource Primary}" CornerRadius="12" Padding="8,4">
+                        <Label Text="#TSK-003" TextColor="{StaticResource Secondary}" FontSize="12" />
+                    </Frame>
+                </HorizontalStackLayout>
+
+                <!-- Section 1 -->
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Details" Style="{StaticResource InputLabel}" />
+                    <Frame Style="{StaticResource CardView}">
+                        <VerticalStackLayout Spacing="8">
+                            <Label Text="Assigned to: John Doe" Style="{StaticResource BodyLabel}" />
+                            <Label Text="Due Date: Oct 31, 2025" Style="{StaticResource BodyLabel}" />
+                            <Label Text="Status: In Progress" Style="{StaticResource BodyLabel}" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </VerticalStackLayout>
+
+                <!-- Section 2 -->
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Description" Style="{StaticResource InputLabel}" />
+                    <Frame Style="{StaticResource CardView}">
+                        <Label Text="This is a detailed description of the task that needs to be completed. It contains all the necessary information for the assignee."
+                               Style="{StaticResource BodyLabel}" />
+                    </Frame>
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Sticky Footer -->
+        <Border Grid.Row="1" StrokeThickness="0" Padding="16" BackgroundColor="White">
+            <Border.Shadow>
+                <Shadow Brush="Black" Offset="0,-10" Opacity="0.1" />
+            </Border.Shadow>
+            <Grid ColumnDefinitions="*, Auto" ColumnSpacing="10">
+                <Button Grid.Column="0" Text="Mark as Complete" />
+                <Button Grid.Column="1" Text="..." WidthRequest="56" />
+            </Grid>
+        </Border>
+
+    </Grid>
+</ContentPage>
