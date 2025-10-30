@@ -25,9 +25,9 @@
 
 4. Shell navigation & bottom tabs
 
-   - [ ] Implement `AppShell` with bottom tabs (max 5 tabs) and define routes for Dashboard, Lists, Settings, etc.
-   - [ ] Wire up empty pages for each tab (DashboardPage, ListPage, DetailPage, DataEntryPage) and register routes.
-   - [ ] Ensure route-based navigation supports pushing/popping from List -> Detail -> Edit and deep linking.
+   - [x] Implement `AppShell` with bottom tabs (max 5 tabs) and define routes for Dashboard, Lists, Settings, etc.
+   - [x] Wire up empty pages for each tab (DashboardPage, ListPage, DetailPage, DataEntryPage) and register routes.
+   - [x] Ensure route-based navigation supports pushing/popping from List -> Detail -> Edit and deep linking.
 
 5. Dashboard screen
 
