@@ -31,9 +31,9 @@
 
 5. Dashboard screen
 
-   - [ ] Implement `DashboardViewModel` with properties for KPIs and recent items.
-   - [ ] Implement `DashboardPage` layout: header (Welcome + user name), KPI card grid, recent items CollectionView, and FAB.
-   - [ ] Hook FAB to a command in the ViewModel that navigates to Data Entry for new item creation.
+   - [x] Implement `DashboardViewModel` with properties for KPIs and recent items.
+   - [x] Implement `DashboardPage` layout: header (Welcome + user name), KPI card grid, recent items CollectionView, and FAB.
+   - [x] Hook FAB to a command in the ViewModel that navigates to Data Entry for new item creation.
 
 6. List View
 

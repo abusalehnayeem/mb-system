@@ -1,12 +1,59 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:MauiERP.UI.ViewModels"
+             xmlns:components="clr-namespace:MauiERP.UI.Components"
              x:Class="MauiERP.UI.Views.DashboardPage"
-             Title="Dashboard">
-    <VerticalStackLayout>
-        <Label
-            Text="Welcome to the Dashboard!"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Dashboard"
+             x:DataType="viewmodels:DashboardViewModel">
+
+    <Grid RowDefinitions="Auto, Auto, *" Padding="{StaticResource StandardPadding}">
+
+        <!-- Header -->
+        <Label Grid.Row="0"
+               Text="Welcome, User!"
+               Style="{StaticResource HeaderLabel}"
+               Margin="0,0,0,16"
+               SemanticProperties.HeadingLevel="Level1" />
+
+        <!-- KPI Card Grid -->
+        <CollectionView Grid.Row="1"
+                        ItemsSource="{Binding Kpis}"
+                        HeightRequest="120"
+                        SelectionMode="None">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Horizontal" Span="3" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <components:KpiCard Title="{Binding Name}"
+                                        Value="{Binding Value}"
+                                        AutomationId="KpiCard" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Recent Items List -->
+        <CollectionView Grid.Row="2"
+                        ItemsSource="{Binding RecentItems}"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <components:ListItemTemplate PrimaryText="{Binding Line1}"
+                                                 SecondaryText="{Binding Line2}"
+                                                 StatusColor="{Binding Status, Converter={StaticResource StatusToColorConverter}}"
+                                                 AutomationId="ListItem" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Floating Action Button -->
+        <components:Fab Grid.Row="2"
+                        Command="{Binding NavigateToDataEntryCommand}"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        Margin="16"
+                        AutomationId="NavigateToDataEntryFab" />
+
+    </Grid>
 </ContentPage>
