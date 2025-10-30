@@ -3,6 +3,20 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
+    <!-- Design tokens -->
+    <OnPlatform x:Key="StandardPadding" x:TypeArguments="Thickness">
+        <On Platform="Android, iOS, MacCatalyst">16</On>
+        <On Platform="Windows">12</On>
+    </OnPlatform>
+    <OnPlatform x:Key="SmallPadding" x:TypeArguments="Thickness">
+        <On Platform="Android, iOS, MacCatalyst">8</On>
+        <On Platform="Windows">6</On>
+    </OnPlatform>
+
+    <Thickness x:Key="CardPadding">12</Thickness>
+    <x:Double x:Key="CornerRadius">8</x:Double>
+    <x:Double x:Key="TouchTargetSize">44</x:Double>
+
     <!-- Typography -->
     <Style x:Key="HeaderLabel" TargetType="Label">
         <Setter Property="FontSize" Value="20" />
@@ -21,13 +35,73 @@
         <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
     </Style>
 
-    <!-- Buttons -->
+    <!-- Input styles -->
+    <Style x:Key="StandardEntry" TargetType="Entry">
+        <Setter Property="HeightRequest" Value="{StaticResource TouchTargetSize}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource White}" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource Gray600}" />
+        <Setter Property="Margin" Value="0,4" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+    </Style>
+
+    <!-- Button styles -->
     <Style x:Key="PrimaryButton" TargetType="Button">
         <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
         <Setter Property="TextColor" Value="{StaticResource White}" />
-        <Setter Property="HeightRequest" Value="44" />
+        <Setter Property="HeightRequest" Value="{StaticResource TouchTargetSize}" />
         <Setter Property="CornerRadius" Value="8" />
         <Setter Property="Padding" Value="16,0" />
     </Style>
+
+    <Style x:Key="FabButtonStyle" TargetType="Button">
+        <Setter Property="WidthRequest" Value="56" />
+        <Setter Property="HeightRequest" Value="56" />
+        <Setter Property="CornerRadius" Value="28" />
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+        <Setter Property="TextColor" Value="{StaticResource White}" />
+        <!-- Proper Shadow object instead of numeric literal -->
+        <Setter Property="Shadow">
+            <Setter.Value>
+                <Shadow Brush="#80000000" Radius="2" Offset="0,2"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="HorizontalOptions" Value="End" />
+        <Setter Property="VerticalOptions" Value="End" />
+        <Setter Property="SemanticProperties.Hint" Value="Floating action button" />
+        <Setter Property="AutomationProperties.IsInAccessibleTree" Value="True" />
+    </Style>
+
+    <!-- List item styles -->
+    <Style x:Key="ListPrimaryLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+    </Style>
+
+    <Style x:Key="ListSecondaryLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+    </Style>
+
+    <!-- Sticky footer container style -->
+    <Style x:Key="StickyFooter" TargetType="Grid">
+        <Setter Property="Padding" Value="{StaticResource SmallPadding}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource White}" />
+        <Setter Property="VerticalOptions" Value="End" />
+        <Setter Property="RowDefinitions">
+            <Setter.Value>
+                <RowDefinitionCollection>
+                    <RowDefinition Height="Auto" />
+                </RowDefinitionCollection>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Accessibility defaults -->
+    <OnPlatform x:Key="DefaultAutomationIdPrefix" x:TypeArguments="x:String">
+        <On Platform="Android, iOS">mberp</On>
+        <On Platform="Windows">mberp-w</On>
+    </OnPlatform>
 
 </ResourceDictionary>
