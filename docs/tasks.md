@@ -7,10 +7,10 @@
 4. [x] Set up CI pipeline for build and unit tests.
 
 ## Phase 2: Architecture & Design
-5. [ ] Define project folder structure (UI/Views, ViewModels, Models, Services, Resources).
-6. [ ] Select and configure MVVM framework (CommunityToolkit.Mvvm).
-7. [ ] Design Shell navigation structure (bottom tabs).
-8. [ ] Create ResourceDictionaries for colors, typography, and spacing.
+5. [x] Define project folder structure (UI/Views, ViewModels, Models, Services, Resources).
+6. [x] Select and configure MVVM framework (CommunityToolkit.Mvvm).
+7. [x] Design Shell navigation structure (bottom tabs).
+8. [x] Create ResourceDictionaries for colors, typography, and spacing.
 
 ## Phase 3: Core Infrastructure
 9. [ ] Scaffold MAUI project with Shell navigation.

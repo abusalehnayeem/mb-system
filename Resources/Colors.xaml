@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Blue/White Theme Colors -->
+    <Color x:Key="PrimaryBlue">#1976D2</Color>
+    <Color x:Key="AccentBlue">#2196F3</Color>
+    <Color x:Key="BackgroundWhite">#FFFFFF</Color>
+    <Color x:Key="SurfaceGray">#F5F5F5</Color>
+    <Color x:Key="TextPrimary">#212121</Color>
+    <Color x:Key="TextSecondary">#757575</Color>
+</ResourceDictionary>
