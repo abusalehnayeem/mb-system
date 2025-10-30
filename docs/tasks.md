@@ -1,10 +1,10 @@
 # Mobile ERP UI Task List
 
 ## Phase 1: Project Kickoff
-1. [ ] Review and finalize requirements, target OS versions, and device matrix.
-2. [ ] Initialize repository and set up branching strategy.
-3. [ ] Create issue tracker and document coding guidelines.
-4. [ ] Set up CI pipeline for build and unit tests.
+1. [x] Review and finalize requirements, target OS versions, and device matrix.
+2. [x] Initialize repository and set up branching strategy.
+3. [x] Create issue tracker and document coding guidelines.
+4. [x] Set up CI pipeline for build and unit tests.
 
 ## Phase 2: Architecture & Design
 5. [ ] Define project folder structure (UI/Views, ViewModels, Models, Services, Resources).
