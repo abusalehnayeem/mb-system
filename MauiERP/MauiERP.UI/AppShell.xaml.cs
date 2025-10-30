@@ -1,10 +1,14 @@
-﻿namespace MauiERP.UI
+namespace MauiERP.UI;
+
+using MauiERP.UI.Views;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        Routing.RegisterRoute(nameof(DetailPage), typeof(DetailPage));
+        Routing.RegisterRoute(nameof(DataEntryPage), typeof(DataEntryPage));
     }
 }
