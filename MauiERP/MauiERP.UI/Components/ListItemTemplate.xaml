@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:MauiERP.UI.Components"
+             x:Class="MauiERP.UI.Components.ListItemTemplate">
+    <Frame Style="{StaticResource CardView}" AutomationId="ListItemTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <components:StatusDot Grid.Column="0" StatusColor="{Binding StatusColor}" SemanticProperties.Description="Item status" />
+
+            <VerticalStackLayout Grid.Column="1">
+                <Label Text="{Binding PrimaryText}" Style="{StaticResource SubheaderLabel}" SemanticProperties.HeadingLevel="Level3" />
+                <Label Text="{Binding SecondaryText}" Style="{StaticResource BodyLabel}" />
+                <Label Text="{Binding TertiaryText}" Style="{StaticResource SmallLabel}" />
+            </VerticalStackLayout>
+
+            <Image Grid.Column="2" Source="chevron_right.png" VerticalOptions="Center" SemanticProperties.Hint="Tap to view details." />
+        </Grid>
+    </Frame>
+</ContentView>

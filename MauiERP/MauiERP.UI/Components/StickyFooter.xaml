@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiERP.UI.Components.StickyFooter">
+    <Frame CornerRadius="0" Padding="16" HasShadow="True" AutomationId="StickyFooter">
+        <StackLayout Orientation="Horizontal" Spacing="8">
+            <Button x:Name="PrimaryButton" Style="{StaticResource PrimaryButton}" HorizontalOptions="FillAndExpand"
+                    Text="{Binding PrimaryButtonText}" Command="{Binding PrimaryButtonCommand}"
+                    SemanticProperties.Hint="Tap to perform the primary action." />
+            <Button x:Name="SecondaryButton" Style="{StaticResource SecondaryButton}" IsVisible="{Binding SecondaryButtonText, Converter={StaticResource IsNotNullOrEmptyConverter}}"
+                    Text="{Binding SecondaryButtonText}" Command="{Binding SecondaryButtonCommand}"
+                    SemanticProperties.Hint="Tap to perform the secondary action." />
+            <Button x:Name="TertiaryButton" Style="{StaticResource TextButton}" IsVisible="{Binding TertiaryButtonText, Converter={StaticResource IsNotNullOrEmptyConverter}}"
+                    Text="{Binding TertiaryButtonText}" Command="{Binding TertiaryButtonCommand}"
+                    SemanticProperties.Hint="Tap to perform the tertiary action." />
+        </StackLayout>
+    </Frame>
+</ContentView>

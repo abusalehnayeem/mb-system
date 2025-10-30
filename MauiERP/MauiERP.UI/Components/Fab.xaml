@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiERP.UI.Components.Fab">
+    <Button Style="{StaticResource PrimaryButton}"
+            Text="+"
+            CornerRadius="28"
+            HeightRequest="56"
+            WidthRequest="56"
+            FontSize="24"
+            FontAttributes="Bold"
+            Command="{Binding Command}"
+            AutomationId="Fab"
+            SemanticProperties.Hint="Tap to create a new item." />
+</ContentView>
