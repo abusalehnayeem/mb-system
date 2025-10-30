@@ -26,10 +26,10 @@ namespace MauiERP.UI.ViewModels
             Kpis.Add(new Kpi { Name = "New Orders", Value = "1,200" });
             Kpis.Add(new Kpi { Name = "Fill Rate", Value = "98.5%" });
 
-            // Placeholder data for recent items
-            RecentItems.Add(new ListItem { Id = "1", Line1 = "Order #1023", Line2 = "Customer: John Doe", Status = "Shipped" });
-            RecentItems.Add(new ListItem { Id = "2", Line1 = "Order #1024", Line2 = "Customer: Jane Smith", Status = "Pending" });
-            RecentItems.Add(new ListItem { Id = "3", Line1 = "Order #1025", Line2 = "Customer: Acme Corp", Status = "Delivered" });
+            // Placeholder data for recent items (use correct ListItem properties and types)
+            RecentItems.Add(new ListItem { Id = 1, PrimaryText = "Order #1023", SecondaryText = "Customer: John Doe", Status = "Shipped" });
+            RecentItems.Add(new ListItem { Id = 2, PrimaryText = "Order #1024", SecondaryText = "Customer: Jane Smith", Status = "Pending" });
+            RecentItems.Add(new ListItem { Id = 3, PrimaryText = "Order #1025", SecondaryText = "Customer: Acme Corp", Status = "Delivered" });
         }
 
         [RelayCommand]
