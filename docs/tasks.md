@@ -34,7 +34,6 @@
    - [ ] Implement `DashboardViewModel` with properties for KPIs and recent items.
    - [ ] Implement `DashboardPage` layout: header (Welcome + user name), KPI card grid, recent items CollectionView, and FAB.
    - [ ] Hook FAB to a command in the ViewModel that navigates to Data Entry for new item creation.
-   - [ ] Add unit tests for `DashboardViewModel` (initial data population and FAB command behavior).
 
 6. List View
 
