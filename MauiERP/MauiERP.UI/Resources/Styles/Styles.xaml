@@ -64,6 +64,36 @@
         <Setter Property="Padding" Value="16,0" />
     </Style>
 
+    <Style x:Key="FabButtonStyle" TargetType="Button">
+        <Setter Property="WidthRequest" Value="56" />
+        <Setter Property="HeightRequest" Value="56" />
+        <Setter Property="CornerRadius" Value="28" />
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+        <Setter Property="TextColor" Value="{StaticResource White}" />
+        <!-- Proper Shadow object instead of numeric literal -->
+        <Setter Property="Shadow">
+            <Setter.Value>
+                <Shadow Brush="#80000000" Radius="2" Offset="0,2"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="HorizontalOptions" Value="End" />
+        <Setter Property="VerticalOptions" Value="End" />
+        <Setter Property="SemanticProperties.Hint" Value="Floating action button" />
+        <Setter Property="AutomationProperties.IsInAccessibleTree" Value="True" />
+    </Style>
+
+    <!-- List item styles -->
+    <Style x:Key="ListPrimaryLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+    </Style>
+
+    <Style x:Key="ListSecondaryLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+    </Style>
+
     <Style x:Key="TextButton" TargetType="Button">
         <Setter Property="BackgroundColor" Value="{StaticResource Transparent}" />
         <Setter Property="TextColor" Value="{StaticResource Primary}" />
