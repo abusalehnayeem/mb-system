@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
 <ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
@@ -6,26 +7,35 @@
     <!-- Primary Colors -->
     <Color x:Key="Primary">#2196F3</Color>
     <Color x:Key="PrimaryDark">#1976D2</Color>
-    <Color x:Key="PrimaryLight">#BBDEFB</Color>
+    <Color x:Key="PrimaryLight">#64B5F6</Color>
+    <Color x:Key="PrimaryAccent">#FFC107</Color>
 
     <!-- Standard Colors -->
     <Color x:Key="White">#FFFFFF</Color>
     <Color x:Key="Black">#000000</Color>
-    <Color x:Key="Gray100">#F5F5F5</Color>
-    <Color x:Key="Gray200">#EEEEEE</Color>
-    <Color x:Key="Gray300">#E0E0E0</Color>
-    <Color x:Key="Gray400">#BDBDBD</Color>
-    <Color x:Key="Gray500">#9E9E9E</Color>
-    <Color x:Key="Gray600">#757575</Color>
+    <Color x:Key="LightGray">#FAFAFA</Color>
+    <Color x:Key="MidGray">#E0E0E0</Color>
+    <Color x:Key="DarkGray">#9E9E9E</Color>
 
-    <!-- App-Specific Colors -->
+    <!-- Text Colors -->
+    <Color x:Key="PrimaryText">#212121</Color>
+    <Color x:Key="SecondaryText">#757575</Color>
+    <Color x:Key="DisabledText">#BDBDBD</Color>
+    <Color x:Key="MutedText">#9E9E9E</Color>
+
+    <!-- Background Colors -->
     <Color x:Key="PageBackgroundColor">#FAFAFA</Color>
-    <Color x:Key="PrimaryTextColor">#212121</Color>
-    <Color x:Key="SecondaryTextColor">#757575</Color>
+    <Color x:Key="CardBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="ListItemBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SectionBackgroundColor">#F5F5F5</Color>
 
     <!-- Status Colors -->
     <Color x:Key="Success">#4CAF50</Color>
-    <Color x:Key="Warning">#FFC107</Color>
+    <Color x:Key="Warning">#FF9800</Color>
     <Color x:Key="Error">#F44336</Color>
+    <Color x:Key="Info">#2196F3</Color>
+
+    <!-- Transparent Colors -->
+    <Color x:Key="Transparent">Transparent</Color>
 
 </ResourceDictionary>

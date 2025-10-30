@@ -1,33 +1,99 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<ResourceDictionary 
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <!-- Typography -->
+    <!-- Include Colors -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!-- App-wide Style Values -->
+    <x:Double x:Key="StandardPadding">16</x:Double>
+    <x:Double x:Key="StandardCornerRadius">8</x:Double>
+    <x:Double x:Key="MinimumTouchTargetSize">44</x:Double>
+
+    <!-- Typography Styles -->
     <Style x:Key="HeaderLabel" TargetType="Label">
         <Setter Property="FontSize" Value="20" />
         <Setter Property="FontAttributes" Value="Bold" />
-        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryText}" />
     </Style>
 
     <Style x:Key="BodyLabel" TargetType="Label">
         <Setter Property="FontSize" Value="16" />
-        <Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="TextColor" Value="{StaticResource SecondaryText}" />
+    </Style>
+
+    <Style x:Key="SubheaderLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryText}" />
     </Style>
 
     <Style x:Key="SmallLabel" TargetType="Label">
         <Setter Property="FontSize" Value="14" />
-        <Setter Property="FontAttributes" Value="Bold" />
-        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="TextColor" Value="{StaticResource MutedText}" />
     </Style>
 
-    <!-- Buttons -->
+    <!-- Button Styles -->
     <Style x:Key="PrimaryButton" TargetType="Button">
         <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
         <Setter Property="TextColor" Value="{StaticResource White}" />
-        <Setter Property="HeightRequest" Value="44" />
-        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="CornerRadius" Value="{StaticResource StandardCornerRadius}" />
+        <Setter Property="MinimumHeightRequest" Value="{StaticResource MinimumTouchTargetSize}" />
+        <Setter Property="MinimumWidthRequest" Value="{StaticResource MinimumTouchTargetSize}" />
         <Setter Property="Padding" Value="16,0" />
+    </Style>
+
+    <Style x:Key="SecondaryButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource White}" />
+        <Setter Property="TextColor" Value="{StaticResource Primary}" />
+        <Setter Property="BorderColor" Value="{StaticResource Primary}" />
+        <Setter Property="BorderWidth" Value="1" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="CornerRadius" Value="{StaticResource StandardCornerRadius}" />
+        <Setter Property="MinimumHeightRequest" Value="{StaticResource MinimumTouchTargetSize}" />
+        <Setter Property="MinimumWidthRequest" Value="{StaticResource MinimumTouchTargetSize}" />
+        <Setter Property="Padding" Value="16,0" />
+    </Style>
+
+    <Style x:Key="TextButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource Transparent}" />
+        <Setter Property="TextColor" Value="{StaticResource Primary}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="MinimumHeightRequest" Value="{StaticResource MinimumTouchTargetSize}" />
+        <Setter Property="MinimumWidthRequest" Value="{StaticResource MinimumTouchTargetSize}" />
+    </Style>
+
+    <!-- Card View Style -->
+    <Style x:Key="CardView" TargetType="Frame">
+        <Setter Property="HasShadow" Value="True" />
+        <Setter Property="Padding" Value="{StaticResource StandardPadding}" />
+        <Setter Property="CornerRadius" Value="{StaticResource StandardCornerRadius}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource CardBackgroundColor}" />
+    </Style>
+
+    <!-- Input Styles -->
+    <Style x:Key="FormEntry" TargetType="Entry">
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryText}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource MutedText}" />
+        <Setter Property="MinimumHeightRequest" Value="{StaticResource MinimumTouchTargetSize}" />
+    </Style>
+
+    <Style x:Key="FormPicker" TargetType="Picker">
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryText}" />
+        <Setter Property="TitleColor" Value="{StaticResource MutedText}" />
+        <Setter Property="MinimumHeightRequest" Value="{StaticResource MinimumTouchTargetSize}" />
     </Style>
 
 </ResourceDictionary>
