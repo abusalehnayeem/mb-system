@@ -1,9 +1,13 @@
-namespace MauiERP.UI.Views;
+using MauiERP.UI.ViewModels;
 
-public partial class DashboardPage : ContentPage
+namespace MauiERP.UI.Views
 {
-	public DashboardPage()
-	{
-		InitializeComponent();
-	}
+    public partial class DashboardPage : ContentPage
+    {
+        public DashboardPage(DashboardViewModel viewModel)
+        {
+            InitializeComponent();
+            BindingContext = viewModel;
+        }
+    }
 }
