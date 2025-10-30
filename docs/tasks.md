@@ -17,16 +17,16 @@
 
 3. Design system & theming
 
-   - [ ] Create `Resources/Styles.xaml` and add color, typography, padding, and radius tokens from `docs/requirements.md`.
-   - [ ] Add a light theme resource dictionary using Primary #2196F3, Background #FAFAFA, Text colors, and status colors.
-   - [ ] Create reusable styles for headers, body text, labels, buttons, and inputs that match typography spec.
+   - [x] Create `Resources/Styles.xaml` and add color, typography, padding, and radius tokens from `docs/requirements.md`.
+   - [x] Add a light theme resource dictionary using Primary #2196F3, Background #FAFAFA, Text colors, and status colors.
+   - [x] Create reusable styles for headers, body text, labels, buttons, and inputs that match typography spec.
    - [ ] Implement UI components: KPI card, status dot, list item template, sticky footer, FAB, primary button.
    - [ ] Add accessibility attributes to components (AutomationIds, semantic labels) and ensure 44pt touch target sizing.
 
 4. Shell navigation & bottom tabs
 
-   - [ ] Implement `AppShell` with bottom tabs (max 5 tabs) and define routes for Dashboard, Lists, Settings, etc.
-   - [ ] Wire up empty pages for each tab (DashboardPage, ListPage, DetailPage, DataEntryPage) and register routes.
+   - [x] Implement `AppShell` with bottom tabs (max 5 tabs) and define routes for Dashboard, Lists, Settings, etc.
+   - [x] Wire up empty pages for each tab (DashboardPage, ListPage, DetailPage, DataEntryPage) and register routes.
    - [ ] Ensure route-based navigation supports pushing/popping from List -> Detail -> Edit and deep linking.
 
 5. Dashboard screen
